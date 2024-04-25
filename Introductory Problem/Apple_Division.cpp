@@ -15,60 +15,6 @@ const long long MOD =1e9+7;
  
 const ll inf = 1e15;
 const ll N = 200005;
-void print(vector<ll>&arr){
-  for(auto &v:arr){
-    cout<<v<<" ";
-  }
-  cout<<endl;
-}
- 
-int gcd(int a, int b)
-{
-    if (b == 0)
-        return a;
-    return gcd(b, a % b);
-}
-// 1)MOD Addition
-inline ll modadd(ll a, ll b, ll mod = MOD)
-{
-    return (a % mod + b % mod + 2 * mod) % mod;
-}
-// 2)MOD Subtraction
-inline ll modsub(ll a, ll b, ll mod = MOD)
-{
-    return (a % mod - b % mod + 2 * mod) % mod;
-}
-// 3)MOD Multiplication
-inline ll modmul(ll a, ll b, ll mod = MOD)
-{
-    return ((a % mod) * (b % mod)) % mod;
-}
-// 4)MOD Exponentiation
-ll binexp(ll a, ll b, ll mod = MOD)
-{
-    ll ans = 1;
-    while (b)
-    {
-        if (b % 2 == 1)
-        {
-            ans = ((ans % mod) * (a % mod)) % mod;
-        }
-        a = ((a % mod) * (a % mod)) % mod;
-        b = b / 2;
-    }
-    return ans;
-}
-// 5)MOD Inverse
-inline ll modinv(ll a, ll mod = MOD)
-{
-    return binexp(a, mod - 2);
-}
-void printst(set<int> st){
-    for(auto v:st){
-        cout<<v<<" ";
-    }
-    cout<<endl;
-}
 //*********************************************************************************************************
 ll ans=1e18;
 ll n;
