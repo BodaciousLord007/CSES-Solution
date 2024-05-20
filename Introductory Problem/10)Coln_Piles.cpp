@@ -1,9 +1,3 @@
-/*
-There are N persons standing in the queue. They are numbered from 1 to N. Hi is the height of the person i. Pi is the 
-number of persons who are taller than i and standing in front of i. 
-Given these two arrays H and P, your task is to find the actual order of the queue. 
-It is guaranteed that the height of each person will be unique.
-*/
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
